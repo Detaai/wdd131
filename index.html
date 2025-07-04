@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WDD 131 – Dynamic Web Fundamentals – Caleb Austin Jones</title>
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | Caleb Austin Jones | Personal course homepage with HTML, CSS, and JavaScript." />
+  <meta name="author" content="Caleb Austin Jones" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1><span id="course-title">WDD 131: Dynamic Web Fundamentals</span> – <span class="highlight">Caleb Austin Jones</span></h1>
+    <nav>
+      <a href="https://www.linkedin.com/in/caleb-jones-jones-ab1706339/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://byupw.instructure.com/" target="_blank" rel="noopener noreferrer">Canvas</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank" rel="noopener noreferrer">Scripture</a>
+      <a href="#">Final Project</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card about">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <p>Hello! I'm Caleb Jones. I live in Kingman, Arizona. I enjoy learning web development and exploring how the internet works. This site is my landing page for WDD 131. I love coding, writting my book, and spending time outdoors.</p>
+        <img src="images/profile.jpg" alt="Photo of Caleb Austin Jones" />
+      </div>
+      <hr />
+      <h3>Kingman, AZ, United States</h3>
+      <div class="location">
+        <img src="images/USA-flag.png" alt="Official Flag of United States" />
+        <p><em>Official Flag of United States</em></p>
+        <p>Kingman, Arizona is a small desert town with a surprising amount of character. I’ve lived here for two years now, and while it’s quiet, it has its charm. It sits right along historic Route 66, so we get a lot of quirky roadside attractions and travelers passing through. There’s a place downtown where you can still buy old-school root beer in glass bottles, and the sunsets here—deep orange and pink across the mountains—are unreal. Summers are hot, but the wind helps. Plus, there’s always at least one train rolling through town at any given time—you get used to the sound.</p>
+
+      </div>
+    </section>
+
+    <section class="card resources">
+      <h2>Web Dev Resources</h2>
+      <ul>
+        <li><a href="https://dev.to/">Dev.to Community</a></li>
+        <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+        <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+        <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+        <li><a href="https://www.udemy.com/">Udemy</a></li>
+        <li><a href="https://placeholder.com/">Image Placeholder</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> 🐟 Caleb Austin Jones 🐟 Kingman, AZ</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
+<script>
+  // Get the current year and set it in the footer
+  document.getElementById('currentyear').textContent = new Date().getFullYear();
+
+  // Get the last modified date and set it in the footer
+  document.getElementById('lastModified').textContent = `Last Modified: ${document.lastModified}`;
