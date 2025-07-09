@@ -1,0 +1,50 @@
+/* Large screen adjustments for temple pages to match main site */
+
+#hamburger {
+  display: none;
+}
+
+/* Nav becomes horizontal */
+nav {
+  display: flex !important;
+  position: static;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #222;
+  padding: 0.75rem 0;
+  gap: 1.5rem;
+  border-radius: 0 0 8px 8px;
+  margin-top: 1rem;
+  box-shadow: none;
+  width: auto;
+  max-height: none !important;
+}
+
+nav a {
+  padding: 0.25rem 0.75rem;
+  border: none;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--white);
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover,
+nav a:focus {
+  background: var(--accent);
+  color: var(--primary);
+}
+
+/* Album grid 3 columns */
+.album-grid {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+main {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: center;
+}
