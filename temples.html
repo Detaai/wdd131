@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Temple Album</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/temple.css" />
+  <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 768px)" />
+  <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+
+<header>
+  <h1>Temple Album</h1>
+  <button id="hamburger" aria-label="Toggle menu" aria-expanded="false">☰</button>
+  <nav id="nav-menu" class="hidden">
+    <a href="#">Home</a>
+    <a href="#">Old</a>
+    <a href="#">New</a>
+    <a href="#">Large</a>
+    <a href="#">Small</a>
+  </nav>
+</header>
+
+<main>
+  <section class="card">
+    <h2>Temple Gallery</h2>
+    <p class="subtitle" style="color: var(--primary); margin-bottom: 2rem;">
+      A collection of beautiful temples from around the world.
+    </p>
+    <section class="album-grid">
+      <figure>
+        <img src="images/temple1.jpg" alt="Payson Temple" />
+        <figcaption>Payson Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple2.jpg" alt="Washington DC Temple" />
+        <figcaption>Washington DC Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple3.jpg" alt="Trujillo Peru Temple" />
+        <figcaption>Trujillo Peru Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple5.jpg" alt="Provo City Center Temple" />
+        <figcaption>Provo City Center Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple6.jpg" alt="Bogotá Colombia Temple" />
+        <figcaption>Bogotá Colombia Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple7.jpg" alt="Billings Montana Temple" />
+        <figcaption>Billings Montana Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple4.jpg" alt="Fiji Temple" />
+        <figcaption>Fiji Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple8.jpg" alt="Freiberg Germany Temple" />
+        <figcaption>Freiberg Germany Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple9.jpg" alt="Detroit Michigan Temple" />
+        <figcaption>Detroit Michigan Temple</figcaption>
+      </figure>
+    </section>
+  </section>
+</main>
+
+<footer>
+  <p>© <span id="year"></span> 🐟 Caleb Austin Jones 🐟 Kingman, AZ</p>
+  <p>Last Modification: <span id="lastModified"></span></p>
+</footer>
+
+</body>
+</html>
