@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Temple Album</title>
+  <meta name="description" content="A gallery of beautiful temples from around the world. WDD 131 project by Caleb Austin Jones.">
+  <meta name="author" content="Caleb Austin Jones">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/filtered-temple.css">
+  <link rel="stylesheet" href="styles/filtered-temples-large.css" media="(min-width: 768px)">
+  <script src="scripts/filtered-templs.js" defer></script>
+</head>
+<body>
+
+<header>
+  <h1>Temple Album</h1>
+  <button id="hamburger" aria-label="Toggle menu" aria-expanded="false">☰</button>
+  <nav id="nav-menu" class="hidden">
+    <a href="#">Home</a>
+    <a href="#">Old</a>
+    <a href="#">New</a>
+    <a href="#">Large</a>
+    <a href="#">Small</a>
+  </nav>
+</header>
+
+<main>
+  <section class="card">
+    <h2>Temple Gallery</h2>
+    <p class="subtitle">
+      A collection of beautiful temples from around the world.
+    </p>
+    <section class="album-grid">
+      <!-- JS will inject temple cards here -->
+    </section>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; <span id="year"></span> 🐟 Caleb Austin Jones 🐟 Kingman, AZ</p>
+  <p>Last Modification: <span id="lastModified"></span></p>
+</footer>
+
+</body>
+</html>
