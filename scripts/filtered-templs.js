@@ -160,3 +160,5 @@ document.addEventListener('DOMContentLoaded', () => {
   renderTemples(temples);
 });
 
+console.log("filtered-templs.js loaded");
+
