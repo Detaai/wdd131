@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Review Form</title>
+  <meta name="description" content="Submit a product review for WDD 131 assignment by Caleb Austin Jones." />
+  <meta name="author" content="Caleb Austin Jones" />
+  <link rel="stylesheet" href="styles/form.css" />
+  <script src="scripts/form.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Product Review Form</h1>
+  </header>
+  <main>
+    <form method="get" action="review.html" class="review-form" autocomplete="on">
+      <fieldset>
+        <legend>Product Information</legend>
+        <label for="productName">Product Name<span aria-hidden="true">*</span></label>
+        <select id="productName" name="productName" required>
+          <option value="" disabled selected>Select a Product ...</option>
+          <!-- JS will populate options here -->
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Overall Rating<span aria-hidden="true">*</span></legend>
+        <div class="stars">
+          <input type="radio" id="star5" name="rating" value="5" required>
+          <label for="star5" title="5 stars">&#9733;</label>
+          <input type="radio" id="star4" name="rating" value="4">
+          <label for="star4" title="4 stars">&#9733;</label>
+          <input type="radio" id="star3" name="rating" value="3">
+          <label for="star3" title="3 stars">&#9733;</label>
+          <input type="radio" id="star2" name="rating" value="2">
+          <label for="star2" title="2 stars">&#9733;</label>
+          <input type="radio" id="star1" name="rating" value="1">
+          <label for="star1" title="1 star">&#9733;</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Installation Details</legend>
+        <label for="installDate">Date of Installation<span aria-hidden="true">*</span></label>
+        <input type="date" id="installDate" name="installDate" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Useful Features</legend>
+        <div class="features">
+          <input type="checkbox" id="feature1" name="features" value="Easy Setup">
+          <label for="feature1">Easy Setup</label>
+          <input type="checkbox" id="feature2" name="features" value="Durable">
+          <label for="feature2">Durable</label>
+          <input type="checkbox" id="feature3" name="features" value="Affordable">
+          <label for="feature3">Affordable</label>
+          <input type="checkbox" id="feature4" name="features" value="High Performance">
+          <label for="feature4">High Performance</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Written Review</legend>
+        <label for="review">Your Review</label>
+        <textarea id="review" name="review" rows="4" placeholder="Share your experience..."></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>User Info</legend>
+        <label for="userName">Your Name</label>
+        <input type="text" id="userName" name="userName" placeholder="(Optional)">
+      </fieldset>
+
+      <input type="submit" value="Submit Review">
+    </form>
+  </main>
+  <footer>
+    <p>&copy; <span id="year"></span> 🐟 Caleb Austin Jones 🐟 Kingman, AZ</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
