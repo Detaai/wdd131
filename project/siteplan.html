@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Entine Calculator Site Plan</title>
+    <link rel="stylesheet" href="styles-mobile.css" media="only screen and (max-width: 500px)">
+    <style>
+        body {
+            background: linear-gradient(135deg, #232526 0%, #485563 100%);
+            color: #FFD700;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0 0 40px 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 32px auto;
+            background: rgba(36, 54, 39, 0.97);
+            border-radius: 18px;
+            box-shadow: 0 8px 32px #000a;
+            border: 2px solid #FFD700;
+            padding: 32px 24px;
+        }
+        h1, h2 {
+            color: #FFD700;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        h2 {
+            border-bottom: 1px solid #FFD700;
+            padding-bottom: 4px;
+            margin-top: 32px;
+        }
+        .color-sample {
+            display: inline-block;
+            width: 40px;
+            height: 24px;
+            border-radius: 6px;
+            margin-right: 10px;
+            border: 1px solid #FFD700;
+            vertical-align: middle;
+        }
+        .color-dark { background: #232526; }
+        .color-gold { background: #FFD700; }
+        .wireframes {
+            display: flex;
+            gap: 32px;
+            flex-wrap: wrap;
+            margin-top: 16px;
+        }
+        .wireframe {
+            background: #fffbe7;
+            border: 2px dashed #FFD700;
+            border-radius: 10px;
+            padding: 12px;
+            width: 220px;
+            color: #232526;
+            font-size: 0.95rem;
+        }
+        .wireframe-title {
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 12px 2vw; }
+            .wireframes { flex-direction: column; gap: 16px; }
+            .wireframe { width: 98vw; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Entine Calculator Site Plan</h1>
+
+        <h2>Site Name</h2>
+        <p>
+            <strong>Entine Calculator</strong><br>
+            This name reflects the site's focus on the magical world of Entine, providing interactive tools, encyclopedic content, and resources for exploring its creatures, magic, and lore.
+        </p>
+
+        <h2>Site Purpose</h2>
+        <p>
+            The Entine Calculator website is a hub for fans and creators of the Entine universe. It provides detailed information about magical creatures, magic types, and characters, as well as interactive tools for exploring magical effects and lore. The site aims to be both a reference and a creative playground for worldbuilding and storytelling.
+        </p>
+
+        <h2>Scenarios</h2>
+        <ul>
+            <li>What magical abilities can I gain by consuming different creatures in Entine?</li>
+            <li>Where can I find information about the main cast and their backgrounds?</li>
+            <li>How do different types of magic work, and which creatures or artifacts grant them?</li>
+        </ul>
+
+        <h2>Color Schema</h2>
+        <ul>
+            <li>
+                <span class="color-sample color-dark"></span>
+                <strong>#232526</strong> — Used for backgrounds and containers.
+            </li>
+            <li>
+                <span class="color-sample color-gold"></span>
+                <strong>#FFD700</strong> — Used for headings, accents, borders, and highlights.
+            </li>
+        </ul>
+
+        <h2>Typography</h2>
+        <ul>
+            <li><strong>Segoe UI, Arial, sans-serif</strong> — Used for all headings and body text for readability and a modern look.</li>
+            <li><strong>Special fonts</strong> may be used for logo or fantasy headings as needed.</li>
+        </ul>
+
+        <h2>Wireframe</h2>
+        <div class="wireframes">
+            <div class="wireframe">
+                <div class="wireframe-title">Mobile View</div>
+                <pre>
++----------------------+
+|  Logo / Site Name    |
+|----------------------|
+|  "Begin" Button      |
+|----------------------|
+|  Main Menu           |
+|----------------------|
+|  Footer              |
++----------------------+
+                </pre>
+            </div>
+            <div class="wireframe">
+                <div class="wireframe-title">Desktop View</div>
+                <pre>
++--------------------------------------+
+| Logo   | Site Name         | Nav     |
+|--------------------------------------|
+|           Welcome           |
+|         "Begin" Button      |
+|------------------------------|
+|      Main Content            |
+|------------------------------|
+|           Footer             |
++--------------------------------------
