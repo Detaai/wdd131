@@ -1,0 +1,126 @@
+:root {
+  --primary: #0d3b66;
+  --accent: #f4b942;
+  --bg: #f7f7fa;
+  --card: #fff;
+  --text: #222;
+  --radius: 12px;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  margin: 0;
+}
+
+header, footer {
+  text-align: center;
+  background: var(--primary);
+  color: #fff;
+  padding: 1.5rem 1rem 1rem 1rem;
+  border-radius: 0 0 var(--radius) var(--radius);
+}
+
+main {
+  max-width: 500px;
+  margin: 2rem auto;
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 2rem 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+fieldset {
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 1rem;
+  margin: 0;
+}
+
+legend {
+  color: var(--primary);
+  font-weight: bold;
+  padding: 0 0.5em;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.3em;
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #bbb;
+  border-radius: var(--radius);
+  font-size: 1em;
+  margin-bottom: 0.5em;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.5em;
+}
+
+.features label {
+  display: inline-block;
+  margin-right: 1em;
+  margin-bottom: 0.5em;
+}
+
+.stars {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 0.2em;
+}
+
+.stars input[type="radio"] {
+  display: none;
+}
+
+.stars label {
+  font-size: 2em;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.stars input[type="radio"]:checked ~ label,
+.stars label:hover,
+.stars label:hover ~ label {
+  color: var(--accent);
+}
+
+input[type="submit"] {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.75em 1.5em;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin-top: 1em;
+  transition: background 0.2s;
+}
+
+input[type="submit"]:hover {
+  background: var(--accent);
+  color: var(--primary);
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 1rem 0.5rem;
+  }
+}
